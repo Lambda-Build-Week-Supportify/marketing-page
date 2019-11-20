@@ -177,6 +177,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  font-family: 'Odibee Sans', cursive;
+}
 header {
   border-bottom: dashed #C0C0C0;
   margin: 20px 0;
@@ -288,11 +291,18 @@ nav {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-between;
 }
 .home .content-pick .btn {
   border-radius: 20px;
   padding: 25px;
   font-size: 2rem;
-  background-color: #17A2B8;
-  color: white;
+  background-color: #D03940;
+  color: #FDC543;
+  align-self: flex-end;
+  margin: 0 auto;
 }
