@@ -177,6 +177,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  font-family: 'Odibee Sans', cursive;
+}
 header {
   border-bottom: dashed #C0C0C0;
   margin: 20px 0;
