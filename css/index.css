@@ -219,6 +219,19 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: center;
+    background: #FDC543;
+    width: 100%;
+  }
+  header nav a {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -278,6 +291,7 @@ nav {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  background: #FDC543;
 }
 .home .content-pick .destination {
   width: 30%;
