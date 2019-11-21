@@ -159,6 +159,10 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 2.8rem;
+  padding-bottom: 10px;
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
@@ -172,10 +176,31 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 800px;
+.main {
+  max-width: 850px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .main .main {
+    background: coral;
+    width: 100%;
+  }
+  .main .main header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .main .main {
+    background: purple;
+    width: 100%;
+  }
+  .main .main header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 nav {
   font-family: 'Odibee Sans', cursive;
@@ -202,32 +227,6 @@ nav {
 .container header nav {
   display: flex;
   justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .main {
-    background: purple;
-    width: 100%;
-  }
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-self: flex-end;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-    background: lightcoral;
-    width: 100%;
-  }
-  h1 {
-    order: 0;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-self: flex-end;
-  }
 }
 .footer {
   width: 100%;
@@ -281,6 +280,7 @@ nav {
 }
 .home .content-destination img {
   border-radius: 10px;
+  padding: 25px;
 }
 .home .content-pick {
   padding-top: 30px;
@@ -305,4 +305,69 @@ nav {
   color: #FDC543;
   align-self: flex-end;
   margin: 0 auto;
+}
+.home {
+  margin: 30px 0;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .main header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.teamcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.teamcontainer .img-content {
+  width: 38%;
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 10px;
+  margin: 30px 0;
+  transition-delay: 0.25s;
+}
+@media (max-width: 500px) {
+  .teamcontainer .img-content {
+    width: 100%;
+  }
+}
+.teamcontainer .team1 {
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.teamcontainer .team2 {
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.teamcontainer .team3 {
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.teamcontainer .team4 {
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.teamcontainer .team5 {
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.teamcontainer .team6 {
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 10px;
+  margin: 30px 0;
 }

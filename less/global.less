@@ -22,6 +22,11 @@
     font-size: 3.2rem;
     padding-bottom: 10px;
   }
+
+  h3 {
+    font-size: 2.8rem;
+    padding-bottom: 10px;
+  }
   
   h4 {
     font-size: 2.5rem;
@@ -39,11 +44,38 @@
     height: auto;
   }
   
-  .container {
-    max-width: 800px;
+  .main {
+    max-width: 850px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 800px) {
+      .main {
+        background: coral;
+        width: 100%;
+      }
+  
+      .main header nav {
+          display: flex;
+          justify-content: space-between;
+      }
   }
+  
+  @media (max-width: 500px) {
+      .main {
+        background:purple;
+        width: 100%;
+        
+      }
+      .main header nav {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+      }
+  
+  }
+
+  } // <---- main
 
   nav {
     font-family: 'Odibee Sans', cursive;
